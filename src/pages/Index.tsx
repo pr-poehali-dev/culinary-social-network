@@ -87,7 +87,7 @@ const Index = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img src="https://cdn.poehali.dev/projects/ec709c0c-79e7-4a3c-8d6f-795ae428a0ac/bucket/d721cb60-769e-4185-b817-1fcfb74f6bc9.png" alt="MGCook Logo" className="h-12 w-12" />
+              <img src="https://cdn.poehali.dev/projects/ec709c0c-79e7-4a3c-8d6f-795ae428a0ac/bucket/3bd871da-dbe4-4358-a6da-984b2a443587.png" alt="MGCook Logo" className="h-12 w-12" />
               <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Кулинарка</h1>
             </div>
             <div className="flex gap-6 items-center">
