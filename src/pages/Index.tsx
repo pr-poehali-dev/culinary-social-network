@@ -89,7 +89,7 @@ const Index = () => {
             <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Gastronome</h1>
             <div className="flex gap-6 items-center">
               <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">Рецепты</a>
-              <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">Сообщество</a>
+              <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">Сообщества</a>
               <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">Рейтинги</a>
               <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">О проекте</a>
               <Button className="bg-gradient-to-r from-secondary to-accent hover:from-accent hover:to-secondary" size="sm">
