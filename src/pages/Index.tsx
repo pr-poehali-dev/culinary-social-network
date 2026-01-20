@@ -82,17 +82,17 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
-      <nav className="border-b border-border/40 backdrop-blur-sm bg-background/80 sticky top-0 z-50">
+    <div className="min-h-screen bg-gradient-to-br from-primary/10 via-background to-secondary/20">
+      <nav className="border-b border-border/40 backdrop-blur-sm bg-gradient-to-r from-card/95 to-secondary/10 sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-3xl font-bold text-primary">Gastronome</h1>
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Gastronome</h1>
             <div className="flex gap-6 items-center">
-              <a href="#" className="text-sm hover:text-primary transition-colors">Рецепты</a>
-              <a href="#" className="text-sm hover:text-primary transition-colors">Сообщество</a>
-              <a href="#" className="text-sm hover:text-primary transition-colors">Рейтинги</a>
-              <a href="#" className="text-sm hover:text-primary transition-colors">О проекте</a>
-              <Button variant="outline" size="sm">
+              <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">Рецепты</a>
+              <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">Сообщество</a>
+              <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">Рейтинги</a>
+              <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">О проекте</a>
+              <Button className="bg-gradient-to-r from-secondary to-accent hover:from-accent hover:to-secondary" size="sm">
                 <Icon name="User" className="mr-2" size={16} />
                 Войти
               </Button>
@@ -115,43 +115,43 @@ const Index = () => {
               <Icon name="Search" className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground" size={20} />
               <Input
                 placeholder="Найти рецепт, ингредиент или шеф-повара..."
-                className="pl-12 h-14 text-base"
+                className="pl-12 h-14 text-base bg-card/80 backdrop-blur-sm"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
-            <Button size="lg" className="h-14 px-8">
+            <Button size="lg" className="h-14 px-8 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70">
               Поиск
             </Button>
           </div>
           <div className="flex gap-2 justify-center flex-wrap">
-            <Badge variant="outline" className="cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors">
+            <Badge variant="outline" className="cursor-pointer hover:bg-gradient-to-r hover:from-secondary hover:to-accent hover:text-foreground hover:border-transparent transition-all">
               Основные блюда
             </Badge>
-            <Badge variant="outline" className="cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors">
+            <Badge variant="outline" className="cursor-pointer hover:bg-gradient-to-r hover:from-secondary hover:to-accent hover:text-foreground hover:border-transparent transition-all">
               Закуски
             </Badge>
-            <Badge variant="outline" className="cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors">
+            <Badge variant="outline" className="cursor-pointer hover:bg-gradient-to-r hover:from-secondary hover:to-accent hover:text-foreground hover:border-transparent transition-all">
               Десерты
             </Badge>
-            <Badge variant="outline" className="cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors">
+            <Badge variant="outline" className="cursor-pointer hover:bg-gradient-to-r hover:from-secondary hover:to-accent hover:text-foreground hover:border-transparent transition-all">
               Напитки
             </Badge>
-            <Badge variant="outline" className="cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors">
+            <Badge variant="outline" className="cursor-pointer hover:bg-gradient-to-r hover:from-secondary hover:to-accent hover:text-foreground hover:border-transparent transition-all">
               Выпечка
             </Badge>
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-6 bg-card/50">
+      <section className="py-16 px-6 bg-gradient-to-b from-card/30 to-transparent">
         <div className="container mx-auto max-w-7xl">
           <div className="flex justify-between items-center mb-10">
             <div>
               <h3 className="text-4xl font-bold mb-2">Избранные рецепты</h3>
               <p className="text-muted-foreground">Коллекция лучших блюд от мастеров кулинарии</p>
             </div>
-            <Button variant="outline">
+            <Button className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70">
               Все рецепты
               <Icon name="ArrowRight" className="ml-2" size={16} />
             </Button>
@@ -237,7 +237,7 @@ const Index = () => {
                     <span className="text-sm text-muted-foreground">Подписчиков</span>
                     <span className="font-semibold">{chef.followers}</span>
                   </div>
-                  <Button className="w-full mt-4">
+                  <Button className="w-full mt-4 bg-gradient-to-r from-secondary to-accent hover:from-accent hover:to-secondary">
                     <Icon name="UserPlus" className="mr-2" size={16} />
                     Подписаться
                   </Button>
@@ -248,7 +248,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 px-6 bg-card/50">
+      <section className="py-16 px-6 bg-gradient-to-b from-transparent to-card/30">
         <div className="container mx-auto max-w-7xl">
           <h3 className="text-4xl font-bold mb-4 text-center">База ингредиентов</h3>
           <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
@@ -256,7 +256,7 @@ const Index = () => {
           </p>
 
           <Tabs defaultValue="all" className="w-full">
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-4 mb-8">
+            <TabsList className="grid w-full max-w-md mx-auto grid-cols-4 mb-8 bg-card/80 backdrop-blur-sm">
               <TabsTrigger value="all">Все</TabsTrigger>
               <TabsTrigger value="protein">Белки</TabsTrigger>
               <TabsTrigger value="vegetables">Овощи</TabsTrigger>
