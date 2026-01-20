@@ -321,7 +321,7 @@ const Index = () => {
         <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h4 className="text-2xl font-bold mb-4 text-primary">Gastronome</h4>
+              <h4 className="text-2xl font-bold mb-4 text-primary">Кулинарка</h4>
               <p className="text-sm text-muted-foreground">
                 Платформа для гастрономических открытий и кулинарного мастерства
               </p>
