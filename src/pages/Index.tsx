@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -8,6 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedRecipe, setSelectedRecipe] = useState<number | null>(null);
 
@@ -95,7 +97,11 @@ const Index = () => {
               <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">Сообщества</a>
               <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">Рейтинги</a>
               <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">О проекте</a>
-              <Button className="bg-gradient-to-r from-secondary to-accent hover:from-accent hover:to-secondary" size="sm">
+              <Button 
+                className="bg-gradient-to-r from-secondary to-accent hover:from-accent hover:to-secondary" 
+                size="sm"
+                onClick={() => navigate('/login')}
+              >
                 <Icon name="User" className="mr-2" size={16} />
                 Войти
               </Button>
