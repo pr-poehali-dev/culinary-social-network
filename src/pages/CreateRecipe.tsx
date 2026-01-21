@@ -33,9 +33,17 @@ export default function CreateRecipe() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/10 via-background to-secondary/20">
+    <div className="min-h-screen bg-gradient-to-br from-primary/10 via-background to-secondary/20 relative">
+      {/* Фоновая картинка */}
+      <div 
+        className="absolute inset-0 opacity-5 bg-center bg-cover"
+        style={{
+          backgroundImage: 'url(https://cdn.poehali.dev/projects/ec709c0c-79e7-4a3c-8d6f-795ae428a0ac/files/471d5541-8534-4c2f-b3f4-ab2ba0c790cc.jpg)',
+          backgroundAttachment: 'fixed'
+        }}
+      />
       {/* Навигация */}
-      <nav className="border-b border-border/40 backdrop-blur-sm bg-gradient-to-r from-card/95 to-secondary/10 sticky top-0 z-50">
+      <nav className="border-b border-border/40 backdrop-blur-sm bg-gradient-to-r from-card/95 to-secondary/10 sticky top-0 z-50 relative">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-3">
@@ -61,7 +69,7 @@ export default function CreateRecipe() {
       </nav>
 
       {/* Контент */}
-      <div className="container mx-auto px-6 py-12 max-w-4xl">
+      <div className="container mx-auto px-6 py-12 max-w-4xl relative">
         <div className="text-center mb-8">
           <h2 className="text-4xl font-bold mb-3">Конструктор рецепта</h2>
           <p className="text-muted-foreground text-lg">Давай создадим новый рецепт</p>
