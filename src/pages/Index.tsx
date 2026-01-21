@@ -98,6 +98,14 @@ const Index = () => {
               <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">Рейтинги</a>
               <a href="#" className="text-sm hover:text-secondary transition-colors font-medium">О проекте</a>
               <Button 
+                className="bg-gradient-to-r from-primary to-secondary hover:opacity-90" 
+                size="sm"
+                onClick={() => navigate('/create-recipe')}
+              >
+                <Icon name="Plus" className="mr-2" size={16} />
+                Добавить рецепт
+              </Button>
+              <Button 
                 className="bg-gradient-to-r from-secondary to-accent hover:from-accent hover:to-secondary" 
                 size="sm"
                 onClick={() => navigate('/login')}
