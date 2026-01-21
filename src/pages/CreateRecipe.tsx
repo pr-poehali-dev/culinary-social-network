@@ -36,7 +36,7 @@ export default function CreateRecipe() {
     <div className="min-h-screen bg-gradient-to-br from-primary/10 via-background to-secondary/20 relative">
       {/* Фоновая картинка */}
       <div 
-        className="absolute inset-0 opacity-5 bg-center bg-cover"
+        className="absolute inset-0 opacity-20 bg-center bg-cover"
         style={{
           backgroundImage: 'url(https://cdn.poehali.dev/projects/ec709c0c-79e7-4a3c-8d6f-795ae428a0ac/files/471d5541-8534-4c2f-b3f4-ab2ba0c790cc.jpg)',
           backgroundAttachment: 'fixed'
