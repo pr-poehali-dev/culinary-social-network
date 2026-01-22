@@ -100,6 +100,17 @@ export default function Login() {
             <div className="flex-1 h-px bg-border"></div>
           </div>
 
+          {/* Яндекс ID */}
+          <a
+            href="#"
+            className="w-full flex items-center justify-center gap-3 bg-background border-2 border-border hover:border-primary/50 text-foreground py-3 rounded-lg font-semibold transition-all mb-6"
+          >
+            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm4.5 18h-2.25l-2.25-6.75V18H9.75V6h2.813c2.625 0 4.125 1.313 4.125 3.375 0 1.5-.75 2.625-2.063 3.188L17.25 18h-2.75zm-4.688-7.875h.563c1.125 0 1.875-.563 1.875-1.5s-.75-1.5-1.875-1.5h-.563v3z"/>
+            </svg>
+            Войти с помощью Яндекс ID
+          </a>
+
           {/* Регистрация */}
           <div className="text-center">
             <p className="text-muted-foreground">
